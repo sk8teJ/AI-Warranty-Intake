@@ -29,10 +29,98 @@ footer{border-top:1px solid var(--line);padding:23px 0 30px;color:#9299a7;font-s
 @media(max-width:900px){.nav-links{gap:15px}.process-layout{grid-template-columns:250px 1fr}.team-grid{grid-template-columns:repeat(3,1fr)}.tech-grid{grid-template-columns:repeat(3,1fr)}.roadmap{grid-template-columns:repeat(2,1fr)}.metrics{grid-template-columns:repeat(2,1fr)}h1{letter-spacing:-5px}}
 @media(max-width:650px){.wrap{width:calc(100% - 32px)}.nav-in{height:65px}.nav-links{display:none;position:absolute;top:65px;left:0;right:0;padding:15px 20px 20px;background:#f8f9fcf7;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0}.nav-links.open{display:flex}.nav-links a{padding:12px}.menu-btn{display:block}.nav-action{display:none}.hero{padding:67px 0 50px}.hero:before{right:-400px}h1{font-size:clamp(48px,14vw,68px);letter-spacing:-4px}.hero-lead{font-size:15px}.hero-stage{margin-top:48px}.mockup{padding:13px;border-radius:21px}.mock-body{grid-template-columns:1fr}.mock-card{min-height:auto}.float-chip{right:8px;bottom:-20px}.section-title{letter-spacing:-2.5px}.section-copy{font-size:13px}section{padding:62px 0}.cards3,.feature-grid,.scope-grid{grid-template-columns:1fr}.info-card{min-height:155px}.info-card h3{margin-top:18px}.dark-band{flex-direction:column;align-items:flex-start;padding:23px}.process-layout{grid-template-columns:1fr;gap:12px}.process-tabs{grid-template-columns:repeat(2,1fr)}.process-tab{padding:11px;gap:8px}.tab-copy small{display:none}.process-detail{padding:22px;min-height:300px}.tech-wrap{padding:27px 19px;border-radius:23px}.tech-grid{grid-template-columns:repeat(2,1fr)}.team-grid{grid-template-columns:repeat(2,1fr)}.roadmap{grid-template-columns:1fr 1fr}.closing-box{padding:43px 20px;border-radius:24px}.foot{flex-direction:column}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+
+/* Readability pass */
+.nav-links{font-size:14px}
+.nav-action{font-size:14px;padding:13px 20px}
+.eyebrow{font-size:12px}
+.btn{font-size:14px;padding:16px 23px}
+.hero-lead{font-size:20px;line-height:1.7}
+.mock-title{font-size:16px}
+.status{font-size:12px}
+.tiny-label{font-size:11px}
+.case-title{font-size:24px}
+.file-name b{font-size:12px}
+.file-name small{font-size:11px}
+.data-line{font-size:12px}
+.meter-top{font-size:11px}
+.index{font-size:12px}
+.section-copy{font-size:16px;line-height:1.8}
+.info-card{padding:28px}
+.card-no{font-size:12px}
+.info-card h3{font-size:21px}
+.info-card p{font-size:15px;line-height:1.75}
+.dark-band p{font-size:14px}
+.process-tab{padding:17px 18px}
+.tab-copy b{font-size:14px}
+.tab-copy small{font-size:12px}
+.tab-n{font-size:12px}
+.detail-counter{font-size:12px}
+.process-detail h3{font-size:29px}
+.process-detail p{font-size:15px}
+.detail-example{font-size:13px}
+.human{font-size:14px}
+.feature{padding:27px;min-height:185px}
+.feature-tag{font-size:11px}
+.feature h3{font-size:20px}
+.feature p{font-size:14px;line-height:1.75}
+.tech span{font-size:11px}
+.tech b{font-size:16px}
+.tech small{font-size:12px}
+.scope h3{font-size:19px}
+.scope li{font-size:14px}
+.avatar{font-size:19px;font-weight:800;color:var(--blue)}
+.person{padding:20px}
+.person h3{font-size:16px}
+.role{font-size:12px;min-height:34px}
+.person p{font-size:13px;line-height:1.7}
+.week{padding:22px}
+.week small{font-size:11px}
+.week h3{font-size:17px}
+.week p{font-size:13px;line-height:1.7}
+.week time{font-size:11px}
+.metric{padding:23px}
+.metric b{font-size:17px}
+.metric span{font-size:13px;line-height:1.7}
+.faq button{font-size:15px;padding:19px 21px}
+.faq-answer p{font-size:14px;line-height:1.8}
+.closing-box p{font-size:15px}
+footer{font-size:12px}
+.journey-indicator{position:fixed;z-index:45;right:24px;bottom:24px}
+.journey-button{width:72px;min-height:142px;border:1px solid #e0e5f2;background:#ffffffed;backdrop-filter:blur(16px);border-radius:22px;box-shadow:0 12px 35px #18224a18;display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:13px 10px;color:var(--ink);cursor:pointer;transition:transform .25s,box-shadow .25s,opacity .25s}
+.journey-button:hover{transform:translateY(-4px);box-shadow:0 17px 40px #18224a24}
+.journey-arrow{font-size:25px;line-height:1;color:var(--blue);animation:journeyDrift 1.6s ease-in-out infinite}
+@keyframes journeyDrift{0%,100%{transform:translateY(-3px)}50%{transform:translateY(5px)}}
+.journey-track{width:3px;height:48px;border-radius:9px;background:#e6eaf5;overflow:hidden;position:relative}
+.journey-fill{position:absolute;inset:0;background:linear-gradient(180deg,var(--blue),#93a4ff);transform:scaleY(0);transform-origin:top;transition:transform .18s linear}
+.journey-meta{display:grid;gap:3px;text-align:center}
+.journey-meta b{font:800 11px Manrope;color:var(--blue);font-variant-numeric:tabular-nums}
+.journey-meta small{font-size:8px;font-weight:900;letter-spacing:1px;color:#9299a7}
+@media(max-width:900px){.section-copy{font-size:15px}.info-card p{font-size:14px}}
+@media(max-width:650px){
+  .nav-links{font-size:14px}
+  .nav-action{font-size:13px}
+  .hero-lead{font-size:17px}
+  .section-copy{font-size:15px}
+  .info-card p,.feature p,.scope li{font-size:14px}
+  .person h3{font-size:15px}
+  .person p{font-size:12px}
+  .journey-indicator{right:12px;bottom:13px}
+  .journey-button{width:58px;min-height:120px;border-radius:18px;padding:10px 8px}
+  .journey-track{height:38px}
+}
+
 </style>
 </head>
 <body>
 <div class="progress" id="progress"></div>
+<div class="journey-indicator" id="journeyIndicator" aria-label="Прокрутка по странице">
+  <button class="journey-button" id="journeyButton" type="button" aria-label="Перейти к следующему разделу">
+    <span class="journey-arrow">↓</span>
+    <span class="journey-track"><span class="journey-fill" id="journeyFill"></span></span>
+    <span class="journey-meta"><b id="journeyPercent">00%</b><small>ДАЛЬШЕ</small></span>
+  </button>
+</div>
 <header class="site-nav"><div class="wrap nav-in">
 <a class="brand" href="#top"><span class="brand-mark">W</span><span>AI WARRANTY INTAKE</span></a>
 <nav class="nav-links" id="navLinks"><a href="#problem">Проблема</a><a href="#workflow">Процесс</a><a href="#features">Возможности</a><a href="#technology">Технологии</a><a href="#team">Команда</a><a href="#roadmap">План</a></nav>
@@ -113,11 +201,11 @@ footer{border-top:1px solid var(--line);padding:23px 0 30px;color:#9299a7;font-s
 <section id="team"><div class="wrap">
 <div class="section-top reveal"><div class="index">06 / КОМАНДА</div><h2 class="section-title">Пять ролей.<br>Одна общая цель.</h2><p class="section-copy">У каждого участника своя зона ответственности — от требований и разработки до проверки качества AI.</p></div>
 <div class="team-grid">
-<article class="person reveal"><div class="avatar">🐒</div><h3>Ярик Шимпонзе</h3><div class="role">FULLSTACK DEVELOPER + UI/UX</div><p>Архитектура, интерфейс, backend, база данных и сборка приложения.</p></article>
-<article class="person reveal"><div class="avatar">😎</div><h3>Андрей Ровный Баря</h3><div class="role">BUSINESS / SYSTEM ANALYST</div><p>Требования, бизнес-процессы, логика, API-контракты и документация.</p></article>
-<article class="person reveal"><div class="avatar">🎣</div><h3>Стёпка Рыбалка</h3><div class="role">QA ENGINEER</div><p>Тест-план, тест-кейсы, баг-репорты и контроль качества.</p></article>
-<article class="person reveal"><div class="avatar">🎭</div><h3>Мисуня Галустян</h3><div class="role">AI / DATA ENGINEER</div><p>Подготовка данных, AI-интеграции и оценка качества моделей.</p></article>
-<article class="person reveal"><div class="avatar">🗿</div><h3>Семён Заглотатор</h3><div class="role">PRODUCT / PROJECT MANAGER</div><p>Цели, приоритеты, сроки, координация команды и презентация.</p></article>
+<article class="person reveal"><div class="avatar">Y</div><h3>Yarosalv</h3><div class="role">FULLSTACK DEVELOPER + UI/UX</div><p>Архитектура, интерфейс, backend, база данных и сборка приложения.</p></article>
+<article class="person reveal"><div class="avatar">A</div><h3>Andrey</h3><div class="role">BUSINESS / SYSTEM ANALYST</div><p>Требования, бизнес-процессы, логика, API-контракты и документация.</p></article>
+<article class="person reveal"><div class="avatar">S</div><h3>Stepa</h3><div class="role">QA ENGINEER</div><p>Тест-план, тест-кейсы, баг-репорты и контроль качества.</p></article>
+<article class="person reveal"><div class="avatar">M</div><h3>Misha</h3><div class="role">AI / DATA ENGINEER</div><p>Подготовка данных, AI-интеграции и оценка качества моделей.</p></article>
+<article class="person reveal"><div class="avatar">S</div><h3>Semen</h3><div class="role">PRODUCT / PROJECT MANAGER</div><p>Цели, приоритеты, сроки, координация команды и презентация.</p></article>
 </div></div></section>
 
 <section id="roadmap"><div class="wrap">
@@ -150,10 +238,28 @@ const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelect
 const progress=$('#progress');
 function updateProgress(){const max=document.documentElement.scrollHeight-innerHeight;progress.style.width=(max>0?scrollY/max*100:0)+'%'}
 addEventListener('scroll',updateProgress,{passive:true});updateProgress();
+const journeyButton=$('#journeyButton'),journeyIndicator=$('#journeyIndicator'),journeyFill=$('#journeyFill'),journeyPercent=$('#journeyPercent');
+function updateJourney(){
+  const max=document.documentElement.scrollHeight-innerHeight;
+  const ratio=max>0?Math.min(1,Math.max(0,scrollY/max)):0;
+  journeyFill.style.transform='scaleY('+ratio+')';
+  journeyPercent.textContent=Math.round(ratio*100).toString().padStart(2,'0')+'%';
+  journeyIndicator.style.opacity=ratio>.985?'0':'1';
+  journeyIndicator.style.pointerEvents=ratio>.985?'none':'auto';
+}
+addEventListener('scroll',updateJourney,{passive:true});
+addEventListener('resize',updateJourney);
+journeyButton.addEventListener('click',()=>{
+  const candidates=$('main section');
+  const next=candidates.find(section=>section.getBoundingClientRect().top>115);
+  (next||$('#top')).scrollIntoView({behavior:'smooth',block:'start'});
+});
+updateJourney();
+
 const menu=$('#menuBtn'),nav=$('#navLinks');
 menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'×':'☰'});
 $$('#navLinks a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));
-const revealObserver=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');revealObserver.unobserve(e.target)}}),{threshold:.12});
+const revealObserver=new IntersectionObserver(entries=>entries.forEach(e=>{e.target.classList.toggle('in',e.isIntersecting)}),{threshold:.12});
 $$('.reveal').forEach(el=>revealObserver.observe(el));
 const steps=[
 {icon:'↥',title:'Клиент создаёт обращение',text:'Пользователь заполняет форму: указывает товар, серийный номер и описание неисправности, затем прикладывает чек и фотографии.',example:'<b>На входе:</b> данные о товаре, описание проблемы, чек и фотографии.'},
