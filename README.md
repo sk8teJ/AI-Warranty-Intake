@@ -10,7 +10,7 @@
 2. Выберите подключение к Git и репозиторий `sk8teJ/AI-Warranty-Intake`.
 3. Production branch: `main`.
 4. Build command оставьте пустой.
-5. Build output directory: `/`.
+5. Build output directory: `.` (корень репозитория).
 6. Нажмите Deploy.
 
 ## Содержимое
