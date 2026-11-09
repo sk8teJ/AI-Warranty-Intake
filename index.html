@@ -110,6 +110,182 @@ footer{font-size:12px}
   .journey-track{height:38px}
 }
 
+
+/* Nine distinct visual chapters */
+#problem{background:#101521;color:#fff;position:relative;overflow:hidden}
+#problem:before{content:"01";position:absolute;right:3vw;top:15px;font:800 clamp(180px,30vw,420px)/1 Manrope;color:#ffffff06;pointer-events:none}
+#problem .section-top,#problem .cards3,#problem .dark-band{position:relative;z-index:1}
+#problem .index{color:#9eafff}
+#problem .section-title{font-size:clamp(48px,7vw,82px);letter-spacing:-5px}
+#problem .section-copy{color:#b7c0d1}
+#problem .info-card{background:#1a2232;border-color:#30394b;border-radius:8px 26px 26px 26px;min-height:235px}
+#problem .card-no{color:#9eafff}
+#problem .info-card h3{color:#fff;font-size:23px}
+#problem .info-card p{color:#b8c1d1}
+#problem .dark-band{background:#29334a;border:1px solid #3a4762}
+#problem .dark-band p{color:#d1d8e7}
+#workflow{background:#f0f2f8}
+#workflow .section-top{max-width:900px}
+#workflow .process-layout{grid-template-columns:285px 1fr;gap:36px}
+#workflow .process-tab{border-radius:5px 15px 15px 5px;border-left:3px solid transparent}
+#workflow .process-tab.active{border-left-color:var(--blue);box-shadow:0 12px 28px #1c25400c}
+#workflow .process-detail{border-radius:28px;box-shadow:0 22px 60px #1c25400c}
+#workflow .detail-icon{width:58px;height:58px;font-size:24px}
+#features .feature-grid{grid-template-columns:1.15fr .85fr;grid-auto-rows:minmax(190px,auto)}
+#features .feature{border-radius:8px 25px 25px 25px;position:relative;overflow:hidden}
+#features .feature:nth-child(1){grid-row:span 2;background:#e9edff;border-color:#dce3ff}
+#features .feature:nth-child(1) .feature-symbol{background:var(--blue);color:white}
+#features .feature:nth-child(1) h3{font-size:28px}
+#features .feature:nth-child(1) p{max-width:420px}
+#features .feature:nth-child(2){background:#f0f8f4;border-color:#dcefe4}
+#features .feature:nth-child(3){background:#fff8eb;border-color:#f4e9d2}
+#features .feature:nth-child(4){background:#f2efff;border-color:#e4ddff}
+#features .feature:nth-child(1):after{content:"INTAKE";position:absolute;right:20px;bottom:-15px;font:800 76px Manrope;color:#4665f50d}
+.architecture-section{background:#0c111b;color:#f7f8fc;overflow:hidden;position:relative}
+.architecture-section:before{content:"";position:absolute;inset:0;background-image:linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,black,transparent 92%);pointer-events:none}
+.architecture-section .wrap{position:relative}
+.architecture-heading{display:grid;grid-template-columns:1fr .8fr;gap:50px;align-items:end;margin-bottom:34px}
+.architecture-heading .index{color:#9eafff}
+.architecture-heading .section-title{font-size:clamp(52px,7vw,84px);letter-spacing:-5px;margin-bottom:0}
+.architecture-heading>p{color:#aab4c7;font-size:16px;line-height:1.85;max-width:520px;margin:0 0 8px}
+.architecture-shell{border:1px solid #303a4c;background:#111a29;border-radius:28px;padding:25px;box-shadow:0 35px 100px #0005}
+.arch-topline{display:flex;justify-content:space-between;gap:15px;color:#7e8ba2;font-size:10px;font-weight:800;letter-spacing:1.2px;margin-bottom:23px}
+.arch-live{color:#a8b8ff;display:flex;align-items:center;gap:9px}
+.arch-live i{width:7px;height:7px;border-radius:50%;background:#70d6a4;box-shadow:0 0 0 5px #70d6a41c}
+.arch-actors{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.arch-actor{display:flex;align-items:center;gap:15px;padding:17px;background:#1a2639;border:1px solid #34425a;border-radius:16px}
+.arch-actor-icon{width:39px;height:39px;display:grid;place-items:center;border-radius:12px;background:#2c3b59;color:#b8c6ff;font:800 12px Manrope;flex:none}
+.arch-actor b,.arch-store b{display:block;font:800 15px Manrope;color:#fff}
+.arch-actor small,.arch-store small{display:block;color:#9ba9bf;font-size:11px;line-height:1.5;margin-top:4px}
+.arch-actor em{margin-left:auto;color:#8fa2ff;font-style:normal;font-size:9px;font-weight:900;letter-spacing:1px;white-space:nowrap}
+.arch-connector{height:42px;display:flex;align-items:center;justify-content:center;position:relative}
+.arch-connector:before{content:"";position:absolute;top:0;bottom:0;width:1px;background:#56678b}
+.arch-connector span{position:absolute;z-index:1;background:#111a29;padding:4px 10px;color:#8e9bb2;font-size:9px;letter-spacing:1.1px}
+.arch-connector i{position:absolute;bottom:0;width:7px;height:7px;border-right:1px solid #8498c1;border-bottom:1px solid #8498c1;transform:rotate(45deg)}
+.arch-backend{padding:20px;border:1px solid #42547a;border-radius:20px;background:linear-gradient(145deg,#1b2940,#172235)}
+.arch-layer-label{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:15px}
+.arch-layer-label span{font-size:9px;letter-spacing:1.4px;color:#94a8ff;font-weight:900}
+.arch-layer-label b{font:800 15px Manrope;color:#fff}
+.arch-modules{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}
+.arch-module{padding:14px 12px;background:#222f45;border:1px solid #3a4a65;border-radius:12px}
+.arch-module strong{display:block;font:800 12px Manrope;color:#e8edff}
+.arch-module small{display:block;font-size:10px;line-height:1.5;color:#9eacc1;margin-top:5px}
+.arch-module.orchestrator{background:#2b3a5c;border-color:#667fba}
+.arch-connector.inner{height:38px}
+.arch-pipeline{display:grid;grid-template-columns:1fr 20px 1fr 20px .8fr 20px 1fr 20px 1fr;gap:5px;align-items:stretch}
+.arch-step{padding:13px 10px;border:1px solid #3b4b67;background:#202d43;border-radius:12px;min-width:0}
+.arch-step>span{display:block;color:#92a8ff;font:800 10px Manrope;margin-bottom:9px}
+.arch-step b{display:block;color:#fff;font-size:11px;line-height:1.35}
+.arch-step small{display:block;color:#9caac0;font-size:9px;line-height:1.5;margin-top:6px;overflow-wrap:anywhere}
+.arch-step.ai-step{background:#30345b;border-color:#777ee0}
+.arch-arrow{display:grid;place-items:center;color:#879bd2;font-size:19px}
+.arch-result{margin-top:12px;padding:14px 16px;border:1px dashed #7183ad;border-radius:12px;display:flex;align-items:center;justify-content:space-between;gap:15px;background:#1c2b43}
+.arch-result b{display:block;color:#f4f6ff;font:800 13px Manrope}
+.arch-result small{display:block;color:#aab6cb;font-size:10px;margin-top:4px}
+.arch-result>span{color:#9fb0ff;font-size:9px;font-weight:900;letter-spacing:1px}
+.arch-storage{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+.arch-store{display:flex;gap:12px;align-items:center;padding:15px;background:#172131;border:1px solid #344158;border-radius:14px}
+.store-icon{width:38px;height:38px;display:grid;place-items:center;border-radius:11px;background:#293955;color:#b8c6ff;font-size:9px;font-weight:900;flex:none}
+.arch-bottom{display:grid;grid-template-columns:1.2fr .8fr;gap:12px;margin-top:16px}
+.arch-human,.arch-output{padding:18px 20px;border-radius:15px}
+.arch-human{background:#17352f;border:1px solid #2c6655}
+.arch-human span,.arch-output span{display:block;font-size:9px;font-weight:900;letter-spacing:1.2px;color:#8de0bd;margin-bottom:9px}
+.arch-human b,.arch-output b{display:block;font:800 15px Manrope;color:#fff}
+.arch-human small,.arch-output small{display:block;font-size:11px;line-height:1.6;color:#a9cabe;margin-top:6px}
+.arch-output{background:#26324a;border:1px solid #425579}
+.arch-output span{color:#a9baff}
+.arch-output small{color:#b0bbce}
+.arch-footnote{font-size:11px;line-height:1.7;color:#8290a7;margin-top:15px}
+.arch-footnote span{color:#a9baff;font-weight:900}
+#scope{background:#f2f4f8}
+#scope .scope-grid{gap:20px}
+#scope .scope{border-radius:24px;padding:30px}
+#scope .scope:first-child{background:#eaf7f0;border-color:#d4ecdf}
+#scope .scope.out{background:#fff;border-style:dashed}
+#scope .scope h3{font-size:22px}
+#scope .scope li{font-size:15px;padding-bottom:9px;border-bottom:1px solid #0000000b}
+#team{background:#e8ecf8}
+#team .team-grid{grid-template-columns:repeat(5,1fr);gap:12px}
+#team .person{border-radius:22px 22px 22px 7px;padding:22px;min-height:220px;box-shadow:0 12px 30px #202d5010}
+#team .avatar{width:52px;height:52px;border-radius:16px;background:#e9edff;font-size:20px}
+#team .person h3{font-size:17px}
+#team .role{font-size:10px;min-height:32px}
+#team .person p{font-size:12px}
+#roadmap{background:#111521;color:white;overflow:hidden}
+#roadmap .index{color:#a9baff}
+#roadmap .section-copy{color:#b2bdcf}
+#roadmap .week{background:#1b2434;border-color:#303b50;border-radius:4px 18px 18px 18px;padding:22px;min-height:220px}
+#roadmap .week:after{height:4px}
+#roadmap .week small{color:#a9baff}
+#roadmap .week h3{font-size:19px;color:#fff}
+#roadmap .week p{font-size:13px;color:#b2bdcf}
+#roadmap .week time{font-size:11px;color:#8290a7}
+#roadmap .week:nth-child(2){transform:translateY(15px)}
+#roadmap .week:nth-child(3){transform:translateY(30px)}
+#roadmap .week:nth-child(4){transform:translateY(45px)}
+#roadmap .roadmap{padding-bottom:45px}
+#quality{background:#f7f8fb}
+#quality .metrics{grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#fff}
+#quality .metric{border:0;border-right:1px solid var(--line);border-radius:0;min-height:160px;padding:24px}
+#quality .metric:last-child{border-right:0}
+#quality .metric b{font-size:17px;color:var(--blue)}
+#faq{background:#e9edf7}
+#faq .wrap{display:grid;grid-template-columns:.75fr 1.25fr;gap:70px;align-items:start}
+#faq .section-top{position:sticky;top:115px;margin:0}
+#faq .section-title{font-size:clamp(42px,5vw,64px)}
+#faq .faq-list{max-width:none}
+#faq .faq{border:0;border-bottom:1px solid #cbd2e1;border-radius:0;background:transparent}
+#faq .faq button{font-size:16px;padding:22px 4px}
+#faq .faq-answer p{font-size:14px;padding:0 35px 20px 4px}
+@media(max-width:900px){
+ #workflow .process-layout{grid-template-columns:230px 1fr;gap:18px}
+ #team .team-grid{grid-template-columns:repeat(3,1fr)}
+ .arch-pipeline{grid-template-columns:1fr 14px 1fr 14px 1fr;row-gap:8px}
+ .arch-pipeline .arch-step:nth-of-type(4){grid-column:1}
+ .arch-pipeline .arch-step:nth-of-type(4)~.arch-arrow{display:none}
+ .arch-pipeline .arch-step:nth-of-type(5){grid-column:3}
+ #quality .metrics{grid-template-columns:repeat(2,1fr)}
+ #quality .metric:nth-child(2){border-right:0}
+ #quality .metric:nth-child(-n+2){border-bottom:1px solid var(--line)}
+}
+@media(max-width:650px){
+ #problem .section-title,#roadmap .section-title{letter-spacing:-3px}
+ #workflow .process-layout{grid-template-columns:1fr}
+ #features .feature-grid{grid-template-columns:1fr;grid-auto-rows:auto}
+ #features .feature:nth-child(1){grid-row:auto}
+ #features .feature:nth-child(1) h3{font-size:23px}
+ .architecture-heading{grid-template-columns:1fr;gap:16px}
+ .architecture-heading>p{font-size:14px}
+ .architecture-shell{padding:13px;border-radius:20px}
+ .arch-topline{font-size:8px;flex-wrap:wrap}
+ .arch-actors{grid-template-columns:1fr}
+ .arch-actor em{font-size:8px}
+ .arch-backend{padding:12px}
+ .arch-modules{grid-template-columns:repeat(2,1fr)}
+ .arch-pipeline{grid-template-columns:1fr;gap:7px}
+ .arch-arrow{height:12px;transform:rotate(90deg)}
+ .arch-pipeline .arch-step:nth-of-type(4){grid-column:auto}
+ .arch-pipeline .arch-step:nth-of-type(5){grid-column:auto}
+ .arch-pipeline .arch-step:nth-of-type(4)~.arch-arrow{display:grid}
+ .arch-step{padding:12px}
+ .arch-step b{font-size:12px}
+ .arch-step small{font-size:10px}
+ .arch-storage{grid-template-columns:1fr}
+ .arch-bottom{grid-template-columns:1fr}
+ .arch-result{align-items:flex-start;flex-direction:column}
+ #scope .scope{padding:23px}
+ #team .team-grid{grid-template-columns:repeat(2,1fr)}
+ #team .person{min-height:205px;padding:16px}
+ #team .person h3{font-size:15px}
+ #roadmap .week:nth-child(n){transform:none;min-height:0}
+ #roadmap .roadmap{padding-bottom:0}
+ #quality .metrics{grid-template-columns:1fr}
+ #quality .metric{border-right:0;border-bottom:1px solid var(--line);min-height:0}
+ #quality .metric:last-child{border-bottom:0}
+ #faq .wrap{grid-template-columns:1fr;gap:25px}
+ #faq .section-top{position:static}
+}
+
 </style>
 </head>
 <body>
@@ -181,15 +357,49 @@ footer{font-size:12px}
 <article class="feature reveal"><div class="feature-head"><span class="feature-symbol">04</span><span class="feature-tag">HUMAN REVIEW</span></div><h3>Рабочее место сотрудника</h3><p>Просмотр извлечённых данных, замечаний системы и подготовленного черновика ответа.</p></article>
 </div></div></section>
 
-<section id="technology"><div class="wrap"><div class="tech-wrap reveal">
-<div class="index">04 / ТЕХНОЛОГИИ</div><h2 class="section-title">Простая архитектура.<br>Понятные компоненты.</h2><p class="section-copy">Для MVP выбираем монолитную архитектуру: это позволит быстрее собрать и проверить сквозной сценарий без лишней инфраструктурной сложности.</p>
-<div class="tech-grid">
-<div class="tech"><span>FRONTEND</span><b>React</b><small>Интерфейс клиента и сотрудника</small></div>
-<div class="tech"><span>BACKEND</span><b>Python · FastAPI</b><small>API и бизнес-логика</small></div>
-<div class="tech"><span>DATABASE</span><b>PostgreSQL</b><small>Заявки и структурированные данные</small></div>
-<div class="tech"><span>RECOGNITION</span><b>OCR</b><small>Распознавание текста в файлах</small></div>
-<div class="tech"><span>AI LAYER</span><b>LLM API</b><small>Извлечение и анализ сведений</small></div>
-</div></div></div></section>
+<section id="technology" class="architecture-section"><div class="wrap">
+<div class="architecture-heading reveal"><div><div class="index">04 / SYSTEM ARCHITECTURE</div><h2 class="section-title">От файла<br>до решения.</h2></div><p>Целевая архитектура MVP: единое backend-приложение управляет заявками, документами и AI-обработкой. Данные проходят через понятные этапы, а спорные случаи передаются сотруднику.</p></div>
+<div class="architecture-shell reveal">
+<div class="arch-topline"><span class="arch-live"><i></i> TARGET MVP ARCHITECTURE</span><span>MODULAR MONOLITH · REST API</span></div>
+<div class="arch-actors">
+<div class="arch-actor"><span class="arch-actor-icon">01</span><div><b>Клиент</b><small>Создаёт заявку и прикладывает документы</small></div><em>WEB FORM</em></div>
+<div class="arch-actor"><span class="arch-actor-icon">02</span><div><b>Сотрудник</b><small>Проверяет извлечённые данные и замечания</small></div><em>REVIEW UI</em></div>
+</div>
+<div class="arch-connector"><span>HTTPS / JSON</span><i></i></div>
+<div class="arch-backend">
+<div class="arch-layer-label"><span>APPLICATION LAYER</span><b>FastAPI · Backend</b></div>
+<div class="arch-modules">
+<div class="arch-module"><strong>Auth & RBAC</strong><small>Вход и права доступа</small></div>
+<div class="arch-module"><strong>Claims</strong><small>Жизненный цикл заявки</small></div>
+<div class="arch-module"><strong>Documents</strong><small>Файлы и метаданные</small></div>
+<div class="arch-module orchestrator"><strong>Workflow orchestrator</strong><small>Запускает этапы обработки и фиксирует статусы</small></div>
+</div>
+<div class="arch-connector inner"><span>DOCUMENT PIPELINE</span><i></i></div>
+<div class="arch-pipeline">
+<div class="arch-step"><span>01</span><b>Приём файла</b><small>PDF · DOCX · JPG · PNG</small></div>
+<div class="arch-arrow">→</div>
+<div class="arch-step"><span>02</span><b>Извлечение текста</b><small>PyMuPDF · python-docx</small></div>
+<div class="arch-arrow">→</div>
+<div class="arch-step"><span>03</span><b>OCR</b><small>Tesseract для сканов</small></div>
+<div class="arch-arrow">→</div>
+<div class="arch-step ai-step"><span>04</span><b>AI extraction</b><small>Gemini / LLM API</small></div>
+<div class="arch-arrow">→</div>
+<div class="arch-step"><span>05</span><b>Валидация</b><small>Pydantic + бизнес-правила</small></div>
+</div>
+<div class="arch-result"><div><b>Структурированная заявка</b><small>Поля, источники, confidence и найденные расхождения</small></div><span>JSON RESULT</span></div>
+</div>
+<div class="arch-storage">
+<div class="arch-store"><span class="store-icon">DB</span><div><b>PostgreSQL</b><small>Пользователи, заявки, статусы, результаты проверок</small></div></div>
+<div class="arch-store"><span class="store-icon">FILE</span><div><b>File storage</b><small>Оригиналы документов и обработанные файлы</small></div></div>
+<div class="arch-store"><span class="store-icon">LOG</span><div><b>Audit log</b><small>История действий и изменений по заявке</small></div></div>
+</div>
+<div class="arch-bottom">
+<div class="arch-human"><span>HUMAN IN THE LOOP</span><b>Сотрудник принимает финальное решение</b><small>Низкая уверенность, ошибки распознавания и противоречия не скрываются — они попадают в очередь ручной проверки.</small></div>
+<div class="arch-output"><span>OUTPUT</span><b>Проверенная карточка</b><small>Замечания · исправления · черновик ответа</small></div>
+</div>
+</div>
+<div class="arch-footnote"><span>*</span> OCR и LLM — подключаемые сервисы обработки. В MVP это модульный backend, а не набор микросервисов. Хранилище файлов и аудит показаны как отдельные логические компоненты.</div>
+</div></section>
 
 <section id="scope"><div class="wrap">
 <div class="section-top reveal"><div class="index">05 / ГРАНИЦЫ MVP</div><h2 class="section-title">Фокус важнее<br>лишней сложности.</h2><p class="section-copy">На первом этапе проверяем ценность основного процесса. Всё, что не помогает проверить эту гипотезу, оставляем за рамками MVP.</p></div>
